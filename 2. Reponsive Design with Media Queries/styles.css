@@ -22,6 +22,13 @@ a different color when the screen is smaller than 500px*/
   background-color: red;
 }
 
+@media only screen and (min-width: 500px){
+  .change-color {
+    background-color: blue;
+  }
+}
+
+
 /* Todo 2.1: Define and apply CSS styles such that the layout of .change-layout becomes a column
 when the screen's width is smaller than 500px */
 .change-layout {
@@ -29,6 +36,11 @@ when the screen's width is smaller than 500px */
   flex-direction: row;
 }
 
+@media only screen and (min-width: 500px){
+  .change-layout {
+    flex-direction: row; /* Reset to row for larger screens */
+  }
+}
 /* Todo 2.2: Define the common breakpoints for the following devices - phone, tablet, small screens (laptop), and large screens (desktops).
 For each break point, the background of .common-breakpoints must change. You may not use two rules in one media query i.e. you cannot do "(min-width: 100) and (max-width: 200px)" 
 */
@@ -37,3 +49,48 @@ For each break point, the background of .common-breakpoints must change. You may
   height: 300px;
   background-color: blue;
 }
+
+/* Phone */
+@media only screen and (min-width: 150px) {
+  .common-breakpoints {
+    background-color: orangered;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 300px) {
+  .common-breakpoints {
+    background-color: orange;
+  }
+}
+
+/* Small screens (laptop) */
+@media only screen and (min-width: 640px) {
+  .common-breakpoints {
+    background-color: yellow;
+  }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 768px) {
+  .common-breakpoints {
+    background-color: green;
+  }
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 1024px) {
+  .common-breakpoints {
+    background-color: cyan;
+  }
+}
+
+/* Extra-large screens */
+@media only screen and (min-width: 1280px) {
+  .common-breakpoints {
+    background-color: purple;
+  }
+}1
+
+
+
